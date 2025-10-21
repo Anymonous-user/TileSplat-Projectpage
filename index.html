@@ -452,6 +452,20 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
   </p>
 
   <div class="table-wrap">
+    <style>
+    /* 让表头“PSNR ↑”等不换行 */
+    .table thead th { white-space: nowrap; }
+
+    /* 只让合并单元格（如 OOM）水平+垂直居中 */
+    .table td[colspan] {
+      text-align: center;
+      vertical-align: middle; /* 如遇到被 Bulma 覆盖，可加 !important */
+      vertical-align: middle !important;
+    }
+
+    /* 如果希望整张表都水平居中，可再打开下一行 */
+    .table td, .table th { text-align: center; }
+    </style>
     <table class="table is-fullwidth">
       <thead>
         <tr>

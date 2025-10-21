@@ -299,13 +299,13 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <video poster="static/videos/fastloading.jpg" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/drag.mp4" type="video/mp4">
+        <source src="static/videos/fastloading.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Fast loading demo: the viewer displays an instant coarse view and quickly sharpens details as tiles arrive. Adaptive streaming keeps latency low and interaction fluid, even under changing bandwidth.
       </h2>
     </div>
   </div>
@@ -370,10 +370,60 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
   </figure>
 </section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div class="columns is-vcentered is-variable is-6">
+        <!-- 左侧视频 -->
+        <div class="column">
+          <figure class="video-wrap">
+            <video
+              poster="static/images/immersive-exploration.jpg"
+              controls
+              playsinline
+              muted
+              loop
+              preload="metadata">
+              <source src="static/videos/immersive-exploration.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <p class="has-text-centered is-size-6 mt-2">
+            <strong>Immersive Exploration</strong> — quick camera moves, fast details reveal.
+          </p>
+        </div>
+
+        <!-- 右侧视频 -->
+        <div class="column">
+          <figure class="video-wrap">
+            <video
+              poster="static/images/fast-loading.jpg"
+              controls
+              playsinline
+              muted
+              loop
+              preload="metadata">
+              <source src="static/videos/quick-glance.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <p class="has-text-centered is-size-6 mt-2">
+            <strong>Fast Loading</strong> — low startup latency with adaptive streaming.
+          </p>
+        </div>
+      </div>
+
+      <!-- 可选：整段说明 -->
+      <h2 class="subtitle has-text-centered mt-4">
+        TileSplat streams city-scale 3DGS scenes with proactive fetching and WebGL-optimized rendering.
+      </h2>
+    </div>
+  </div>
+</section>
+
 <!-- Comparison -->
 
 <section id="qualitative" class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-fulled">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Qualitive Result</h2>
@@ -390,7 +440,7 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
 </section>
 
 <section id="results" class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-fulled">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Quantitative Result</h2>
@@ -402,7 +452,7 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
   </p>
 
   <div class="table-wrap">
-    <table class="metrics">
+    <table class="table is-fullwidth">
       <thead>
         <tr>
           <th rowspan="2">Method</th>
@@ -470,8 +520,8 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
 </style>
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+<!-- BibTex citation --> 
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -488,11 +538,11 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
   url={https://your-domain.com/your-project-page}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+</section> -->
+<!-- End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -508,7 +558,7 @@ Rendering of City-Scale Photorealistic 3D Scenes</h1>
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
